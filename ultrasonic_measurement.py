@@ -60,6 +60,7 @@ try:
 	while True:
 		distance = measure_distance()
 		print "Distance to object = %0.1f cm" % distance
+		time.sleep(1)
 except KeyboardInterrupt:
 	print "Stopping measurement"
 	GPIO.cleanup()
